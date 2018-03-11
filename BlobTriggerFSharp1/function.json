@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "foo/{name}",
+      "connection": "funcmaniacsa954_STORAGE"
+    },
+    {
+      "type": "queue",
+      "name": "$return",
+      "queueName": "myqueue-items",
+      "connection": "funcmaniacsa954_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": true
+}

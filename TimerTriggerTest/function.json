@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "*/5 * * * * *"
+    },
+    {
+      "type": "queue",
+      "name": "$return",
+      "queueName": "myqueue-items",
+      "connection": "funcmaniacsa954_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
